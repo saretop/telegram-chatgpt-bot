@@ -2,7 +2,7 @@ import sqlite3
 from typing import List, Tuple
 
 class ChatHistoryDatabase:
-    def __init__(self, db_name: str = 'chat_history.db'):
+    def __init__(self, db_name: str = 'src/chat_history.db'):
         self.conn = sqlite3.connect(db_name)
         self.create_table()
 
